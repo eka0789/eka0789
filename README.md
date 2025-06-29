@@ -14,7 +14,6 @@ Welcome to my GitHub profile! I'm a passionate developer from Indonesia 🇮🇩
 
 - 💻 Experienced in **Fullstack Web & App Development**
 - 👨‍🏫 Teaching & mentoring in programming and software engineering
-- 🎥 Content creator at **[Aktif Koding](https://www.youtube.com/@AktifKoding)** (YouTube)
 - 📚 Passionate about tech education, automation, and system architecture
 - 🧑‍💻 Currently working with: Laravel, React, Flutter, Firebase, Odoo, FastAPI, Docker
 - 🌱 Learning more about AI/ML, DevOps, and Cloud Architecture
