@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Eka Prasetyo — aka @eka0789
+# 👋 Hi, I'm Eka Prasetyo
 
 🎯 **Fullstack Developer | Tech Educator | Open Source Enthusiast**
 
