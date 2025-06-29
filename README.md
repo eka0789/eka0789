@@ -72,7 +72,7 @@ Welcome to my GitHub profile! I'm a passionate developer from Indonesia 🇮🇩
 
 ## ☕ Let's Connect!
 
-- 📧 Email: eka0789 [at] gmail.com
+- 📧 Email: eka0789[at]gmail.com
 - 💬 Ask me about: web development, teaching tech, automation, startups
 
 ---
