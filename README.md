@@ -4,9 +4,7 @@
 
 Welcome to my GitHub profile! I'm a passionate developer from Indonesia 🇮🇩 with a focus on building modern web & mobile applications. I also dedicate my time to sharing knowledge through workshops, tutorials, and open-source contributions.
 
-<a href="https://stardev.io/developers/eka0789">
-  <img alt="Check out eka0789's profile on stardev.io" src="https://stardev.io/developers/eka0789/badge/languages/global.svg" />
-</a>
+[![Check out eka0789's profile on stardev.io](https://stardev.io/developers/eka0789/badge/languages/global.svg)](https://stardev.io/developers/eka0789)
 
 ---
 
