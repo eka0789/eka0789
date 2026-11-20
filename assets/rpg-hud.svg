@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 156" width="900" height="156" role="img" aria-label="Developer RPG Character HUD">
+  <defs>
+    <linearGradient id="hudBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131622"/>
+      <stop offset="100%" stop-color="#1a1b27"/>
+    </linearGradient>
+    <linearGradient id="hudBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#70a5fd"/>
+      <stop offset="50%" stop-color="#bf91f3"/>
+      <stop offset="100%" stop-color="#38bdae"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .bar1 { animation: loadBar1 2.2s steps(12) forwards, glow 2.4s steps(2) 2.2s infinite; }
+    .bar2 { animation: loadBar2 2.4s steps(12) forwards, glow 2.4s steps(2) 2.4s infinite; }
+    .bar3 { animation: loadBar3 2.6s steps(12) forwards, glow 2.4s steps(2) 2.6s infinite; }
+    .bar4 { animation: loadBar4 2.8s steps(12) forwards, glow 2.4s steps(2) 2.8s infinite; }
+    .spark { animation: twinkle 1.8s steps(2) infinite; }
+
+    @keyframes loadBar1 { from { width: 0px; } to { width: 228px; } }
+    @keyframes loadBar2 { from { width: 0px; } to { width: 216px; } }
+    @keyframes loadBar3 { from { width: 0px; } to { width: 210px; } }
+    @keyframes loadBar4 { from { width: 0px; } to { width: 234px; } }
+    @keyframes glow {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.82; }
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+  </style>
+
+  <!-- Outer Frame -->
+  <rect x="2" y="2" width="896" height="152" rx="10" fill="url(#hudBorder)"/>
+  <rect x="4" y="4" width="892" height="148" rx="8" fill="url(#hudBg)"/>
+
+  <!-- Corner Pixel Brackets -->
+  <g shape-rendering="crispEdges" fill="#70a5fd">
+    <rect x="12" y="12" width="10" height="3"/>
+    <rect x="12" y="12" width="3" height="10"/>
+    <rect x="878" y="12" width="10" height="3"/>
+    <rect x="885" y="12" width="3" height="10"/>
+    <rect x="12" y="141" width="10" height="3"/>
+    <rect x="12" y="134" width="3" height="10"/>
+    <rect x="878" y="141" width="10" height="3"/>
+    <rect x="885" y="134" width="3" height="10"/>
+  </g>
+
+  <!-- Left Character Badge -->
+  <g transform="translate(26, 22)" shape-rendering="crispEdges">
+    <rect x="0" y="0" width="212" height="112" fill="#0d1117" stroke="#292e42" stroke-width="2"/>
+    <!-- Pixel Dev Icon -->
+    <g transform="translate(18, 20)">
+      <rect x="8" y="0" width="32" height="8" fill="#70a5fd"/>
+      <rect x="4" y="8" width="40" height="24" fill="#bf91f3"/>
+      <rect x="10" y="14" width="28" height="12" fill="#0d1117"/>
+      <rect x="14" y="18" width="6" height="4" fill="#38bdae"/>
+      <rect x="28" y="18" width="6" height="4" fill="#38bdae"/>
+      <rect x="10" y="34" width="28" height="16" fill="#414868"/>
+      <rect x="16" y="38" width="16" height="8" fill="#e0af68"/>
+      <rect class="spark" x="-4" y="2" width="4" height="4" fill="#e0af68"/>
+      <rect class="spark" x="48" y="28" width="4" height="4" fill="#38bdae"/>
+    </g>
+    <text x="80" y="36" font-family="'Courier New', Consolas, monospace" font-size="11" font-weight="bold" fill="#e0af68">CLASS: ARCHITECT</text>
+    <text x="80" y="56" font-family="'Courier New', Consolas, monospace" font-size="15" font-weight="900" fill="#ffffff">EKA_0789</text>
+    <text x="80" y="76" font-family="'Courier New', Consolas, monospace" font-size="11" fill="#38bdae">REPOS : 70+</text>
+    <text x="80" y="94" font-family="'Courier New', Consolas, monospace" font-size="11" fill="#70a5fd">ROLE  : MENTOR</text>
+  </g>
+
+  <!-- Right Skill Bars Grid (2x2) -->
+  <g font-family="'Courier New', Consolas, monospace" shape-rendering="crispEdges">
+    <!-- Row 1 Left -->
+    <g transform="translate(264, 28)">
+      <text x="0" y="12" font-size="12" font-weight="bold" fill="#70a5fd">FULLSTACK WEB &amp; MOBILE</text>
+      <text x="278" y="12" text-anchor="end" font-size="12" font-weight="bold" fill="#a9b1d6">95%</text>
+      <rect x="0" y="20" width="278" height="16" fill="#0d1117" stroke="#292e42" stroke-width="2"/>
+      <rect class="bar1" x="4" y="24" width="228" height="8" fill="#70a5fd"/>
+    </g>
+
+    <!-- Row 1 Right -->
+    <g transform="translate(576, 28)">
+      <text x="0" y="12" font-size="12" font-weight="bold" fill="#bf91f3">AI &amp; COMPUTER VISION</text>
+      <text x="288" y="12" text-anchor="end" font-size="12" font-weight="bold" fill="#a9b1d6">90%</text>
+      <rect x="0" y="20" width="288" height="16" fill="#0d1117" stroke="#292e42" stroke-width="2"/>
+      <rect class="bar2" x="4" y="24" width="216" height="8" fill="#bf91f3"/>
+    </g>
+
+    <!-- Row 2 Left -->
+    <g transform="translate(264, 88)">
+      <text x="0" y="12" font-size="12" font-weight="bold" fill="#38bdae">DEVOPS, PAAS &amp; CLOUD</text>
+      <text x="278" y="12" text-anchor="end" font-size="12" font-weight="bold" fill="#a9b1d6">88%</text>
+      <rect x="0" y="20" width="278" height="16" fill="#0d1117" stroke="#292e42" stroke-width="2"/>
+      <rect class="bar3" x="4" y="24" width="210" height="8" fill="#38bdae"/>
+    </g>
+
+    <!-- Row 2 Right -->
+    <g transform="translate(576, 88)">
+      <text x="0" y="12" font-size="12" font-weight="bold" fill="#e0af68">TECH EDUCATION &amp; MENTORING</text>
+      <text x="288" y="12" text-anchor="end" font-size="12" font-weight="bold" fill="#a9b1d6">98%</text>
+      <rect x="0" y="20" width="288" height="16" fill="#0d1117" stroke="#292e42" stroke-width="2"/>
+      <rect class="bar4" x="4" y="24" width="234" height="8" fill="#e0af68"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 18" width="900" height="18" role="img" aria-label="Animated Pixel Divider">
+  <defs>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#70a5fd" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#70a5fd"/>
+      <stop offset="50%" stop-color="#bf91f3"/>
+      <stop offset="65%" stop-color="#38bdae"/>
+      <stop offset="100%" stop-color="#38bdae" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="lineClip">
+      <rect x="0" y="6" width="900" height="6"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .travel { animation: slideRight 3.2s linear infinite; }
+    @keyframes slideRight {
+      0% { transform: translateX(-220px); }
+      100% { transform: translateX(920px); }
+    }
+  </style>
+
+  <!-- Base Pixel Track -->
+  <g shape-rendering="crispEdges">
+    <rect x="0" y="8" width="900" height="2" fill="#24283b"/>
+    <!-- Decorative Pixel Nodes -->
+    <rect x="0" y="6" width="6" height="6" fill="#70a5fd"/>
+    <rect x="10" y="6" width="6" height="6" fill="#bf91f3" opacity="0.7"/>
+    <rect x="444" y="5" width="12" height="8" fill="#1a1b27" stroke="#70a5fd" stroke-width="2"/>
+    <rect x="884" y="6" width="6" height="6" fill="#bf91f3" opacity="0.7"/>
+    <rect x="894" y="6" width="6" height="6" fill="#38bdae"/>
+  </g>
+
+  <!-- Traveling Neon Energy Pulse -->
+  <g clip-path="url(#lineClip)" shape-rendering="crispEdges">
+    <rect class="travel" x="0" y="6" width="220" height="6" fill="url(#pulseGrad)"/>
+  </g>
+</svg>

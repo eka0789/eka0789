@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 104" width="900" height="104" role="img" aria-label="Animated Pixel Footer">
+  <defs>
+    <linearGradient id="footGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="topNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdae"/>
+      <stop offset="50%" stop-color="#bf91f3"/>
+      <stop offset="100%" stop-color="#70a5fd"/>
+    </linearGradient>
+    <clipPath id="footClip">
+      <rect x="4" y="4" width="892" height="96" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .rocket { animation: flyAcross 9s linear infinite; }
+    .flame { animation: flicker 0.3s steps(2) infinite; }
+    .twk1 { animation: twk 2.2s steps(2) infinite; }
+    .twk2 { animation: twk 2.8s steps(2) 0.9s infinite; }
+
+    @keyframes flyAcross {
+      0% { transform: translateX(-60px); }
+      100% { transform: translateX(940px); }
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+    @keyframes twk {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 1; }
+    }
+  </style>
+
+  <rect x="2" y="2" width="896" height="100" rx="12" fill="url(#topNeon)"/>
+
+  <g clip-path="url(#footClip)">
+    <rect x="4" y="4" width="892" height="96" fill="url(#footGrad)"/>
+
+    <!-- Pixel Stars -->
+    <g shape-rendering="crispEdges">
+      <rect class="twk1" x="58" y="22" width="4" height="4" fill="#ffffff"/>
+      <rect class="twk2" x="150" y="70" width="4" height="4" fill="#70a5fd"/>
+      <rect class="twk1" x="240" y="26" width="4" height="4" fill="#bf91f3"/>
+      <rect class="twk2" x="680" y="24" width="4" height="4" fill="#38bdae"/>
+      <rect class="twk1" x="770" y="68" width="4" height="4" fill="#e0af68"/>
+      <rect class="twk2" x="840" y="30" width="4" height="4" fill="#ffffff"/>
+    </g>
+
+    <!-- Flying Pixel Rocket -->
+    <g class="rocket" transform="translate(0, 14)" shape-rendering="crispEdges">
+      <rect class="flame" x="0" y="6" width="8" height="4" fill="#f7768e"/>
+      <rect class="flame" x="4" y="4" width="6" height="8" fill="#e0af68"/>
+      <rect x="10" y="4" width="16" height="8" fill="#ffffff"/>
+      <rect x="14" y="6" width="4" height="4" fill="#70a5fd"/>
+      <rect x="26" y="6" width="6" height="4" fill="#f7768e"/>
+      <rect x="10" y="0" width="6" height="4" fill="#bf91f3"/>
+      <rect x="10" y="12" width="6" height="4" fill="#bf91f3"/>
+    </g>
+
+    <!-- Quote Text -->
+    <text x="450" y="54" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="15" font-weight="bold" fill="#ffffff" letter-spacing="1">"Code with purpose. Share with passion. Teach to inspire."</text>
+    <text x="450" y="78" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="11" fill="#70a5fd" letter-spacing="2">THANKS FOR VISITING // EKA PRASETYO</text>
+  </g>
+</svg>
